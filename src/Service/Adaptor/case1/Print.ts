@@ -1,4 +1,4 @@
 export interface Print {
-  printWeak(): void;
-  printStrong(): void;
+    printWeak(): void;
+    printStrong(): void;
 }

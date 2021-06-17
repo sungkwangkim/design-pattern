@@ -1,19 +1,19 @@
-import {Print} from './Print'
-import {Banner} from './Banner';
+import { Print } from './Print';
+import { Banner } from './Banner';
 
 export class PrintBanner extends Print {
-  #banner: Banner;
+    #banner: Banner;
 
-  constructor(text: string) {
-    super();
-    this.#banner = new Banner(text);
-  }
-  
-  printWeak(): void {
-    this.#banner.showWithAster();
-  }
+    constructor(text: string) {
+        super();
+        this.#banner = new Banner(text);
+    }
 
-  printStrong(): void {
-    this.#banner.showWithParen();
-  }  
+    printWeak(): void {
+        this.#banner.showWithAster();
+    }
+
+    printStrong(): void {
+        this.#banner.showWithParen();
+    }
 }

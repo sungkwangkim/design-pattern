@@ -1,15 +1,15 @@
 export class Banner {
-  #text: string;
+    #text: string;
 
-  constructor(text: string) {
-    this.#text = text;
-  }
+    constructor(text: string) {
+        this.#text = text;
+    }
 
-  public showWithParen(): void {
-    console.log(`( ${this.#text} )`)
-  }
+    public showWithParen(): void {
+        console.log(`( ${this.#text} )`);
+    }
 
-  public showWithAster(): void {
-    console.log(`* ${this.#text} *`)
-  }
+    public showWithAster(): void {
+        console.log(`* ${this.#text} *`);
+    }
 }
